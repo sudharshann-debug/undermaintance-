@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kalam Education - Maintenance</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+    background:#d9c9a8;
+    font-family: "Courier New", monospace;
+}
+
+.paper{
+    width:100%;
+    max-width:650px;
+    background:
+        repeating-linear-gradient(
+            to bottom,
+            #f4f4f4,
+            #f4f4f4 31px,
+            #cfd8e6 32px
+        );
+    border-radius:8px;
+    box-shadow:0 15px 30px rgba(0,0,0,0.15);
+    position:relative;
+    overflow:hidden;
+}
+
+.paper::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:30px;
+    width:2px;
+    height:100%;
+    background:#ff6b6b;
+}
+
+.top-bar{
+    height:42px;
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+    padding:0 18px;
+}
+
+.red-dot{
+    width:15px;
+    height:15px;
+    border-radius:50%;
+    background:#c63d2f;
+}
+
+.content{
+    padding:28px 28px 50px 48px;
+}
+
+.brand{
+    color:#8a5a2c;
+    font-weight:700;
+    font-size:1.2rem;
+    margin-bottom:32px;
+}
+
+h1{
+    font-size:3rem;
+    color:#333;
+    margin-bottom:20px;
+    line-height:1.1;
+}
+
+p{
+    font-size:1.15rem;
+    color:#555;
+    line-height:1.8;
+}
+
+.signature{
+    margin-top:45px;
+    font-style:italic;
+    color:#222;
+}
+
+.circle{
+    position:absolute;
+    right:28px;
+    bottom:28px;
+    width:80px;
+    height:80px;
+    border-radius:50%;
+    border:5px solid rgba(0,0,0,0.08);
+}
+
+@media (max-width:768px){
+
+    .content{
+        padding:24px 20px 40px 42px;
+    }
+
+    h1{
+        font-size:2.2rem;
+    }
+
+    p{
+        font-size:1rem;
+        line-height:1.7;
+    }
+
+    .brand{
+        font-size:1rem;
+    }
+
+    .circle{
+        width:60px;
+        height:60px;
+    }
+}
+
+@media (max-width:480px){
+
+    h1{
+        font-size:1.8rem;
+    }
+
+    p{
+        font-size:0.95rem;
+    }
+
+    .content{
+        padding:20px 15px 35px 38px;
+    }
+
+    .paper::before{
+        left:22px;
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="paper">
+
+    <div class="top-bar">
+        <div class="red-dot"></div>
+    </div>
+
+    <div class="content">
+        <div class="brand">Kalam Education</div>
+
+        <h1>📖 Dear Students,</h1>
+
+        <p>
+            Our website is currently under maintenance.
+            We are adding new features and improving
+            the learning experience for all students.
+        </p>
+
+        <p style="margin-top:10px;">
+            Please visit again soon.
+        </p>
+
+        <div class="signature">
+            — Team Kalam Education
+        </div>
+    </div>
+
+    <div class="circle"></div>
+
+</div>
+
+</body>
+</html>
